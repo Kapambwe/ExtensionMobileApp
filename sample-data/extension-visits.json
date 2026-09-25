@@ -1,0 +1,184 @@
+[
+  {
+    "visitId": "EXT-2026-0041",
+    "farmerId": "FARMER-0001",
+    "farmerName": "Mutale Kabwe",
+    "farmerPhone": "+260 977 111 222",
+    "farmId": "FARM-CHONGWE-01",
+    "farmName": "Green Valley Plot 4",
+    "officerId": "OFF-2026-09",
+    "officerName": "Bwalya Phiri",
+    "farmLocation": "Chongwe Farm Block",
+    "subjectType": "Crop field",
+    "subjectReference": "FIELD-A-07",
+    "purpose": "Crop health and pest assessment",
+    "scheduledDate": "2026-09-24",
+    "windowStart": "10:00:00",
+    "windowEnd": "12:00:00",
+    "officerEta": "2026-09-24T10:38:00+02:00",
+    "lastLocationUpdatedAt": "2026-09-24T09:45:00+02:00",
+    "status": "EnRoute",
+    "preparationStatus": "Needs preparation",
+    "observations": "Farmer notified of imminent arrival.",
+    "checklist": [
+      {
+        "itemId": "CHK-1",
+        "description": "Inspect field crop health & foliage",
+        "isComplete": false,
+        "isRequired": true,
+        "notes": ""
+      },
+      {
+        "itemId": "CHK-2",
+        "description": "Verify input batch serials & pest damage",
+        "isComplete": false,
+        "isRequired": true,
+        "notes": ""
+      }
+    ],
+    "followUps": [
+      {
+        "followUpId": "FOL-101",
+        "visitId": "EXT-2026-0041",
+        "description": "Apply organic pest spray on Field A-07",
+        "owner": "Farmer",
+        "dueDate": "2026-09-26",
+        "status": "Open"
+      }
+    ],
+    "evidence": [],
+    "lastServerUpdateAt": "2026-09-24T09:45:00+02:00",
+    "eTag": "visit-41-v4"
+  },
+  {
+    "visitId": "EXT-2026-0042",
+    "farmerId": "FARMER-0002",
+    "farmerName": "Chileshe Mwape",
+    "farmerPhone": "+260 966 444 555",
+    "farmId": "FARM-CHONGWE-02",
+    "farmName": "Sunlight Dairy Ranch",
+    "officerId": "OFF-2026-09",
+    "officerName": "Bwalya Phiri",
+    "farmLocation": "Chongwe Farm Block",
+    "subjectType": "Livestock enterprise",
+    "subjectReference": "LIV-DAIRY-02",
+    "purpose": "Livestock health and vaccination review",
+    "scheduledDate": "2026-09-25",
+    "windowStart": "08:30:00",
+    "windowEnd": "10:00:00",
+    "officerEta": null,
+    "lastLocationUpdatedAt": null,
+    "status": "Assigned",
+    "preparationStatus": "Ready",
+    "observations": "",
+    "checklist": [
+      {
+        "itemId": "CHK-3",
+        "description": "Review cattle health logs and vaccination records",
+        "isComplete": false,
+        "isRequired": true,
+        "notes": ""
+      }
+    ],
+    "followUps": [],
+    "evidence": [],
+    "lastServerUpdateAt": "2026-09-23T14:15:00+02:00",
+    "eTag": "visit-42-v1"
+  },
+  {
+    "visitId": "EXT-2026-0045",
+    "farmerId": "FARMER-0003",
+    "farmerName": "Grace Mulenga",
+    "farmerPhone": "+260 955 777 888",
+    "farmId": "FARM-CHONGWE-05",
+    "farmName": "Mulenga Maize Enterprise",
+    "officerId": "OFF-2026-09",
+    "officerName": "Bwalya Phiri",
+    "farmLocation": "Chongwe East Camp",
+    "subjectType": "Soil testing",
+    "subjectReference": "SOIL-BLOCK-03",
+    "purpose": "Soil acidity & nutrient sampling",
+    "scheduledDate": "2026-09-24",
+    "windowStart": "13:00:00",
+    "windowEnd": "15:00:00",
+    "officerEta": null,
+    "lastLocationUpdatedAt": null,
+    "status": "OnSite",
+    "preparationStatus": "Ready",
+    "observations": "Soil samples collected from 4 core quadrants.",
+    "checklist": [
+      {
+        "itemId": "CHK-5",
+        "description": "Take pH core samples from block 3",
+        "isComplete": true,
+        "isRequired": true,
+        "notes": "pH 5.8 measured on test strip"
+      },
+      {
+        "itemId": "CHK-6",
+        "description": "Record GPS coordinates of core locations",
+        "isComplete": false,
+        "isRequired": true,
+        "notes": "Pending GPS fix"
+      }
+    ],
+    "followUps": [],
+    "evidence": [],
+    "lastServerUpdateAt": "2026-09-24T13:10:00+02:00",
+    "eTag": "visit-45-v2"
+  },
+  {
+    "visitId": "EXT-2026-0037",
+    "farmerId": "FARMER-0001",
+    "farmerName": "Mutale Kabwe",
+    "farmerPhone": "+260 977 111 222",
+    "farmId": "FARM-CHONGWE-01",
+    "farmName": "Green Valley Plot 4",
+    "officerId": "OFF-2026-09",
+    "officerName": "Bwalya Phiri",
+    "farmLocation": "Main grain store",
+    "subjectType": "Storage",
+    "subjectReference": "STORE-01",
+    "purpose": "Post-harvest storage assessment",
+    "scheduledDate": "2026-09-21",
+    "windowStart": "14:00:00",
+    "windowEnd": "15:00:00",
+    "officerEta": null,
+    "lastLocationUpdatedAt": null,
+    "status": "Completed",
+    "preparationStatus": "Complete",
+    "observations": "Storage humidity is within limits. Minor aeration needed.",
+    "checklist": [
+      {
+        "itemId": "CHK-4",
+        "description": "Clear access to grain silos",
+        "isComplete": true,
+        "isRequired": true,
+        "notes": "Access clear"
+      }
+    ],
+    "followUps": [
+      {
+        "followUpId": "FOL-099",
+        "visitId": "EXT-2026-0037",
+        "description": "Inspect moisture meters in silo 2",
+        "owner": "Officer",
+        "dueDate": "2026-09-22",
+        "status": "Complete"
+      }
+    ],
+    "evidence": [
+      {
+        "evidenceId": "EVI-001",
+        "fileName": "silo_moisture_reading.jpg",
+        "contentType": "image/jpeg",
+        "storageReference": "storage/visits/EXT-2026-0037/evi_001.jpg",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "capturedAt": "2026-09-21T14:30:00+02:00",
+        "capturedBy": "Bwalya Phiri"
+      }
+    ],
+    "lastServerUpdateAt": "2026-09-21T15:05:00+02:00",
+    "eTag": "visit-37-v5"
+  }
+]
