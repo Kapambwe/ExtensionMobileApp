@@ -61,6 +61,30 @@ export function stopTracking() {
     return true;
 }
 
+export function getCurrentLocation() {
+    if (!navigator.geolocation) {
+        return Promise.reject(new Error('Geolocation is not supported by this device or browser.'));
+    }
+
+    return new Promise((resolve, reject) => {
+        navigator.geolocation.getCurrentPosition(
+            position => resolve({
+                latitude: position.coords.latitude,
+                longitude: position.coords.longitude,
+                accuracy: position.coords.accuracy || null,
+                altitude: position.coords.altitude || null,
+                timestamp: new Date(position.timestamp).toISOString()
+            }),
+            error => reject(new Error(error.code === 1
+                ? 'GPS permission was denied.'
+                : error.code === 2
+                    ? 'Your current location is unavailable.'
+                    : 'GPS acquisition timed out.')),
+            { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }
+        );
+    });
+}
+
 export function simulateWalkAroundField(dotNetHelper, centerLat, centerLng, radiusMeters, pointsCount) {
     stopTracking();
     centerLat = centerLat || -15.4167; // Default near Chongwe farm block if zero
