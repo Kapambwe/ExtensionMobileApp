@@ -1,5 +1,5 @@
 const cachePrefix = "extension-officer-shell-";
-const cacheName = `${cachePrefix}v3`;
+const cacheName = `${cachePrefix}v4`;
 const runtimeCacheName = `${cacheName}-runtime`;
 const appBaseUrl = new URL("./", self.location.href);
 const maxRuntimeEntries = 300;
