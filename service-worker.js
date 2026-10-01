@@ -1,7 +1,7 @@
 const cachePrefix = "extension-officer-shell-";
 const cacheName = `${cachePrefix}v2`;
 const runtimeCacheName = `${cacheName}-runtime`;
-const appBaseUrl = new URL(self.registration.scope);
+const appBaseUrl = new URL("./", self.location.href);
 const maxRuntimeEntries = 300;
 
 self.addEventListener("install", event => {
