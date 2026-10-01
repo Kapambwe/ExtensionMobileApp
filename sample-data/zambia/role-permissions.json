@@ -1,0 +1,110 @@
+{
+  "CountryName": "Zambia",
+  "CountrySlug": "zambia",
+  "OrganizationType": "ExtensionMobileApp",
+  "RolePermissions": [
+    {
+      "RoleId": "ROL-EXT-ADMINISTRATOR",
+      "RoleName": "Extension Administrator",
+      "TemplateRole": "ExtensionAdministrator",
+      "Permissions": [
+        "ExtensionApp.Dashboard.Officer",
+        "ExtensionApp.Fields.Boundaries",
+        "ExtensionApp.Visits.View",
+        "ExtensionApp.Visits.Execute",
+        "ExtensionApp.Visits.Checklist",
+        "ExtensionApp.Visits.FollowUps",
+        "ExtensionApp.Visits.Evidence",
+        "ExtensionApp.Visits.Message",
+        "ExtensionApp.Visits.Tracking",
+        "ExtensionApp.Visits.ResolveConflict",
+        "ExtensionApp.Farmers.Drilldown",
+        "ExtensionApp.Livestock.View",
+        "ExtensionApp.Crops.View",
+        "ExtensionApp.Soil.View",
+        "ExtensionApp.Surveillance.Disease",
+        "ExtensionApp.Precision.Insights"
+      ]
+    },
+    {
+      "RoleId": "ROL-EXT-SENIOR-OFFICER",
+      "RoleName": "Senior Extension Officer",
+      "TemplateRole": "SeniorExtensionOfficer",
+      "Permissions": [
+        "ExtensionApp.Dashboard.Officer",
+        "ExtensionApp.Fields.Boundaries",
+        "ExtensionApp.Visits.View",
+        "ExtensionApp.Visits.Execute",
+        "ExtensionApp.Visits.Checklist",
+        "ExtensionApp.Visits.FollowUps",
+        "ExtensionApp.Visits.Evidence",
+        "ExtensionApp.Visits.Message",
+        "ExtensionApp.Visits.Tracking",
+        "ExtensionApp.Visits.ResolveConflict",
+        "ExtensionApp.Farmers.Drilldown",
+        "ExtensionApp.Livestock.View",
+        "ExtensionApp.Crops.View",
+        "ExtensionApp.Soil.View",
+        "ExtensionApp.Surveillance.Disease",
+        "ExtensionApp.Precision.Insights"
+      ]
+    },
+    {
+      "RoleId": "ROL-EXT-FIELD-OFFICER",
+      "RoleName": "Extension Field Officer",
+      "TemplateRole": "ExtensionFieldOfficer",
+      "Permissions": [
+        "ExtensionApp.Dashboard.Officer",
+        "ExtensionApp.Fields.Boundaries",
+        "ExtensionApp.Visits.View",
+        "ExtensionApp.Visits.Execute",
+        "ExtensionApp.Visits.Checklist",
+        "ExtensionApp.Visits.FollowUps",
+        "ExtensionApp.Visits.Evidence",
+        "ExtensionApp.Visits.Message",
+        "ExtensionApp.Visits.Tracking",
+        "ExtensionApp.Farmers.Drilldown",
+        "ExtensionApp.Livestock.View",
+        "ExtensionApp.Crops.View",
+        "ExtensionApp.Soil.View",
+        "ExtensionApp.Surveillance.Disease",
+        "ExtensionApp.Precision.Insights"
+      ]
+    },
+    {
+      "RoleId": "ROL-EXT-LIVESTOCK-SPECIALIST",
+      "RoleName": "Livestock Specialist",
+      "TemplateRole": "LivestockSpecialist",
+      "Permissions": [
+        "ExtensionApp.Dashboard.Officer",
+        "ExtensionApp.Visits.View",
+        "ExtensionApp.Visits.Execute",
+        "ExtensionApp.Visits.Checklist",
+        "ExtensionApp.Visits.FollowUps",
+        "ExtensionApp.Visits.Evidence",
+        "ExtensionApp.Visits.Message",
+        "ExtensionApp.Farmers.Drilldown",
+        "ExtensionApp.Livestock.View",
+        "ExtensionApp.Surveillance.Disease"
+      ]
+    },
+    {
+      "RoleId": "ROL-EXT-SOIL-CROP-SPECIALIST",
+      "RoleName": "Soil and Crop Specialist",
+      "TemplateRole": "SoilCropSpecialist",
+      "Permissions": [
+        "ExtensionApp.Dashboard.Officer",
+        "ExtensionApp.Visits.View",
+        "ExtensionApp.Visits.Execute",
+        "ExtensionApp.Visits.Checklist",
+        "ExtensionApp.Visits.FollowUps",
+        "ExtensionApp.Visits.Evidence",
+        "ExtensionApp.Farmers.Drilldown",
+        "ExtensionApp.Crops.View",
+        "ExtensionApp.Soil.View",
+        "ExtensionApp.Surveillance.Disease",
+        "ExtensionApp.Precision.Insights"
+      ]
+    }
+  ]
+}
