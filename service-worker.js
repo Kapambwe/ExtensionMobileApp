@@ -15,19 +15,10 @@ self.addEventListener("install", event => {
         const shellMarkup = await shellResponse.clone().text();
         await cache.put(shellUrl, shellResponse);
 
-        const bootUrl = new URL("_framework/blazor.boot.json", appBaseUrl);
-        const bootResponse = await fetch(bootUrl, { cache: "no-cache" });
-        if (!bootResponse.ok)
-            throw new Error(`Extension Officer boot manifest could not be loaded (${bootResponse.status}).`);
-
-        const bootManifest = await bootResponse.clone().json();
-        await cache.put(bootUrl, bootResponse);
         const assets = new Set([
             new URL("manifest.json", appBaseUrl).href,
             new URL("sample-data/extension-visits.json", appBaseUrl).href,
-            bootUrl.href,
-            ...getShellAssets(shellMarkup),
-            ...getBootAssets(bootManifest)
+            ...getShellAssets(shellMarkup)
         ]);
         await cache.addAll([...assets].map(asset => new Request(asset, { credentials: "same-origin" })));
         await self.skipWaiting();
@@ -102,25 +93,6 @@ function getShellAssets(markup) {
         const url = new URL(reference, appBaseUrl);
         if (isCacheableAsset(url)) assets.push(url.href);
     }
-    return assets;
-}
-
-function getBootAssets(manifest) {
-    const assets = [];
-
-    function visit(value) {
-        if (!value || typeof value !== "object") return;
-        for (const [key, child] of Object.entries(value)) {
-            if (typeof child === "string" && /\.(?:dll|wasm|js|dat|json|pdb|blat|woff2)$/i.test(key)) {
-                const url = new URL(`_framework/${key}`, appBaseUrl);
-                if (isCacheableAsset(url)) assets.push(url.href);
-            } else if (child && typeof child === "object") {
-                visit(child);
-            }
-        }
-    }
-
-    visit(manifest?.resources);
     return assets;
 }
 
