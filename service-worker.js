@@ -18,6 +18,10 @@ self.addEventListener("install", event => {
         const assets = new Set([
             new URL("manifest.json", appBaseUrl).href,
             new URL("sample-data/extension-visits.json", appBaseUrl).href,
+            new URL("js/offlineStore.js", appBaseUrl).href,
+            new URL("js/fieldMapping.js", appBaseUrl).href,
+            new URL("js/layout.js", appBaseUrl).href,
+            new URL("js/exports.js", appBaseUrl).href,
             ...getShellAssets(shellMarkup)
         ]);
         await cache.addAll([...assets].map(asset => new Request(asset, { credentials: "same-origin" })));
